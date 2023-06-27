@@ -9,12 +9,6 @@ import { HomeComponent } from './home/home.component';
 import {Router, RouterModule, Routes} from "@angular/router";
 import { ModuleWithProviders } from "@angular/core
 
-export const appRouters: Routes=[
-  { path: 'home', component: HomeComponent },
-  { path: 'login', component: AppComponent }
-]
-
-export const routing : ModuleWithProviders<unknown> = RouterModule.forRoot(appRouters);
 
 @NgModule({
   declarations: [
