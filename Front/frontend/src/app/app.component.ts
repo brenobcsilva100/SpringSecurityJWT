@@ -9,12 +9,14 @@ import {LoginService} from "./login.service";
 export class AppComponent {
   title = 'frontend';
 
-  usuario = {username: '', senha: ''};
+  usuario = {username: '', password: ''};
 
   constructor(private loginService: LoginService) {
+
   }
 
   public login(){
     this.loginService.login(this.usuario);
+
   }
 }
